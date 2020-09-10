@@ -4697,12 +4697,12 @@ document.querySelector('button').addEventListener('click', async () => {
 
 		await writable.write(blob);
 		await writable.close();
+		
+		alert('File successfully written.');
 	}
 	catch (error) {
 		alert(error.message);
 	}
-
-	alert('File successfully written.')
 });
 </script>
 </body>
